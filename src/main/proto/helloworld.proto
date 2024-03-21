@@ -11,27 +11,27 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-syntax = "proto3";
+syntax = "proto3"; // 컴파일러 문법 정의
 
-option java_multiple_files = true;
-option java_package = "io.grpc.examples.helloworld";
-option java_outer_classname = "HelloWorldProto";
-option objc_class_prefix = "HLW";
+option java_multiple_files = true; //override
+option java_package = "io.grpc.examples.helloworld";  //생성된 자바 클래스의 패키지 주소
+option java_outer_classname = "HelloWorldProto"; //build된 클래스 명칭 유형
+option objc_class_prefix = "HLW"; //Objective-C 클래스 접두사
 
 package helloworld;
 
-// The greeting service definition.
+//Contract 정의 HelloRequest를 받아들여 HelloReply를 보낸다 (단항 요청 - 응답)
 service Greeter {
-  // Sends a greeting
   rpc SayHello (HelloRequest) returns (HelloReply) {}
 }
 
-// The request message containing the user's name.
+// 요청 payload 정의
 message HelloRequest {
-  string name = 1;
+  string name = 1; // 속성 - 태그 정의 (protocol buffer 속성을 표현할때 태그가 사용)
 }
 
-// The response message containing the greetings
+// 응답 payload 정의
 message HelloReply {
   string message = 1;
 }
+
