@@ -9,11 +9,19 @@ public interface HelloRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
+   * <pre>
+   * 속성 - 태그 정의 (protocol buffer 속성을 표현할때 태그가 사용)
+   * </pre>
+   *
    * <code>string name = 1;</code>
    * @return The name.
    */
   java.lang.String getName();
   /**
+   * <pre>
+   * 속성 - 태그 정의 (protocol buffer 속성을 표현할때 태그가 사용)
+   * </pre>
+   *
    * <code>string name = 1;</code>
    * @return The bytes for name.
    */

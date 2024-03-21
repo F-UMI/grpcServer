@@ -6,7 +6,7 @@ package io.grpc.examples.helloworld;
 
 /**
  * <pre>
- * The response message containing the greetings
+ * 응답 payload 정의
  * </pre>
  *
  * Protobuf type {@code helloworld.HelloReply}
@@ -241,7 +241,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * The response message containing the greetings
+   * 응답 payload 정의
    * </pre>
    *
    * Protobuf type {@code helloworld.HelloReply}

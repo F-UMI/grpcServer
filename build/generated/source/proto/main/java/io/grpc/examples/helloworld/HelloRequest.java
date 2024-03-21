@@ -6,7 +6,7 @@ package io.grpc.examples.helloworld;
 
 /**
  * <pre>
- * The request message containing the user's name.
+ * 요청 payload 정의
  * </pre>
  *
  * Protobuf type {@code helloworld.HelloRequest}
@@ -48,6 +48,10 @@ private static final long serialVersionUID = 0L;
   @SuppressWarnings("serial")
   private volatile java.lang.Object name_ = "";
   /**
+   * <pre>
+   * 속성 - 태그 정의 (protocol buffer 속성을 표현할때 태그가 사용)
+   * </pre>
+   *
    * <code>string name = 1;</code>
    * @return The name.
    */
@@ -65,6 +69,10 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
+   * <pre>
+   * 속성 - 태그 정의 (protocol buffer 속성을 표현할때 태그가 사용)
+   * </pre>
+   *
    * <code>string name = 1;</code>
    * @return The bytes for name.
    */
@@ -241,7 +249,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * The request message containing the user's name.
+   * 요청 payload 정의
    * </pre>
    *
    * Protobuf type {@code helloworld.HelloRequest}
@@ -415,6 +423,10 @@ private static final long serialVersionUID = 0L;
 
     private java.lang.Object name_ = "";
     /**
+     * <pre>
+     * 속성 - 태그 정의 (protocol buffer 속성을 표현할때 태그가 사용)
+     * </pre>
+     *
      * <code>string name = 1;</code>
      * @return The name.
      */
@@ -431,6 +443,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
+     * <pre>
+     * 속성 - 태그 정의 (protocol buffer 속성을 표현할때 태그가 사용)
+     * </pre>
+     *
      * <code>string name = 1;</code>
      * @return The bytes for name.
      */
@@ -448,6 +464,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
+     * <pre>
+     * 속성 - 태그 정의 (protocol buffer 속성을 표현할때 태그가 사용)
+     * </pre>
+     *
      * <code>string name = 1;</code>
      * @param value The name to set.
      * @return This builder for chaining.
@@ -461,6 +481,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
+     * <pre>
+     * 속성 - 태그 정의 (protocol buffer 속성을 표현할때 태그가 사용)
+     * </pre>
+     *
      * <code>string name = 1;</code>
      * @return This builder for chaining.
      */
@@ -471,6 +495,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
+     * <pre>
+     * 속성 - 태그 정의 (protocol buffer 속성을 표현할때 태그가 사용)
+     * </pre>
+     *
      * <code>string name = 1;</code>
      * @param value The bytes for name to set.
      * @return This builder for chaining.

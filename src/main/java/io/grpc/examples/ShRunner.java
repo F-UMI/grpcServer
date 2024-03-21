@@ -51,7 +51,7 @@ public class ShRunner {
     try {
       map.put(1, stringBuilder.toString());
     } catch (StringIndexOutOfBoundsException e) {
-      if (stringBuilder.toString().length() == 0) {
+      if (stringBuilder.toString().isEmpty()) {
         return map;
       }
     }

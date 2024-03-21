@@ -4,7 +4,7 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**
  * <pre>
- * The greeting service definition.
+ *Contract 정의 HelloRequest를 받아들여 HelloReply를 보낸다 (단항 요청 - 응답)
  * </pre>
  */
 @javax.annotation.Generated(
@@ -95,15 +95,12 @@ public final class GreeterGrpc {
 
   /**
    * <pre>
-   * The greeting service definition.
+   *Contract 정의 HelloRequest를 받아들여 HelloReply를 보낸다 (단항 요청 - 응답)
    * </pre>
    */
   public interface AsyncService {
 
     /**
-     * <pre>
-     * Sends a greeting
-     * </pre>
      */
     default void sayHello(io.grpc.examples.helloworld.HelloRequest request,
         io.grpc.stub.StreamObserver<io.grpc.examples.helloworld.HelloReply> responseObserver) {
@@ -114,7 +111,7 @@ public final class GreeterGrpc {
   /**
    * Base class for the server implementation of the service Greeter.
    * <pre>
-   * The greeting service definition.
+   *Contract 정의 HelloRequest를 받아들여 HelloReply를 보낸다 (단항 요청 - 응답)
    * </pre>
    */
   public static abstract class GreeterImplBase
@@ -128,7 +125,7 @@ public final class GreeterGrpc {
   /**
    * A stub to allow clients to do asynchronous rpc calls to service Greeter.
    * <pre>
-   * The greeting service definition.
+   *Contract 정의 HelloRequest를 받아들여 HelloReply를 보낸다 (단항 요청 - 응답)
    * </pre>
    */
   public static final class GreeterStub
@@ -145,9 +142,6 @@ public final class GreeterGrpc {
     }
 
     /**
-     * <pre>
-     * Sends a greeting
-     * </pre>
      */
     public void sayHello(io.grpc.examples.helloworld.HelloRequest request,
         io.grpc.stub.StreamObserver<io.grpc.examples.helloworld.HelloReply> responseObserver) {
@@ -159,7 +153,7 @@ public final class GreeterGrpc {
   /**
    * A stub to allow clients to do synchronous rpc calls to service Greeter.
    * <pre>
-   * The greeting service definition.
+   *Contract 정의 HelloRequest를 받아들여 HelloReply를 보낸다 (단항 요청 - 응답)
    * </pre>
    */
   public static final class GreeterBlockingStub
@@ -176,9 +170,6 @@ public final class GreeterGrpc {
     }
 
     /**
-     * <pre>
-     * Sends a greeting
-     * </pre>
      */
     public io.grpc.examples.helloworld.HelloReply sayHello(io.grpc.examples.helloworld.HelloRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
@@ -189,7 +180,7 @@ public final class GreeterGrpc {
   /**
    * A stub to allow clients to do ListenableFuture-style rpc calls to service Greeter.
    * <pre>
-   * The greeting service definition.
+   *Contract 정의 HelloRequest를 받아들여 HelloReply를 보낸다 (단항 요청 - 응답)
    * </pre>
    */
   public static final class GreeterFutureStub
@@ -206,9 +197,6 @@ public final class GreeterGrpc {
     }
 
     /**
-     * <pre>
-     * Sends a greeting
-     * </pre>
      */
     public com.google.common.util.concurrent.ListenableFuture<io.grpc.examples.helloworld.HelloReply> sayHello(
         io.grpc.examples.helloworld.HelloRequest request) {
